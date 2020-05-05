@@ -2,6 +2,7 @@ import React ,{Component} from 'react';
 import api from "./api";
 
 class Applications extends Component{
+		
 	render(){
 		return(
 			<div>
@@ -17,7 +18,10 @@ class Applications extends Component{
 										      <source src="{video.src}" type="video/mp4"/>
 										    </video>
 											<p>{video.questionId}</p>
-               								<p>{video.comments}</p>
+               								<input type="text" placeholder={video.comments} className="form-control" />
+											
+
+											
 										</div>
 									})
 
